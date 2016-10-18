@@ -65,3 +65,16 @@ packet_inのあったスイッチに対応するFDBを参照し，宛先MACア�
 複数スイッチ対応による変更はなし
 
 ##動作の解説
+![図１](https://github.com/handai-trema/learning-switch-d-miura/blob/master/step0.png)
+図１に示すネットワークを構成して動作説明する．
+
+###Step.1 host1からhost2へ
+![図2](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Step1-1.png)
+![図3](https://github.com/handai-trema/learning-switch-d-miura/blob/master/step1-2.png)
+
+###Step.2 host2からhost１へ
+![図4](https://github.com/handai-trema/learning-switch-d-miura/blob/master/step2-1.png)
+![図5](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Steps-2.png)
+
+###Step.3 再度host2からhost1へ
+![図6](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Steps3.png)
