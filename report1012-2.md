@@ -74,7 +74,7 @@ packet_inのあったスイッチに対応するFDBを参照し，宛先MACア�
 
 ###Step.2 host2からhost１へ
 ![図4](https://github.com/handai-trema/learning-switch-d-miura/blob/master/step2-1.png)
-![図5](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Steps-2.png)
+![図5](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Step2-2.png)
 
 ###Step.3 再度host2からhost1へ
-![図6](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Steps3.png)
+![図6](https://github.com/handai-trema/learning-switch-d-miura/blob/master/Step3.png)
