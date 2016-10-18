@@ -11,7 +11,7 @@
 ##コードの解説
 multi_learning_switch.rbの各ハンドラの動作について解説する
 
--start
+ - start
 ```ruby
 def start(_argv)
   @fdbs = {}
@@ -20,7 +20,7 @@ end
 ```
 FDBをコントローラに接続されるスイッチごとに管理するため，インスタンス変数fdbsをハッシュとして宣言している．その後，起動メッセージの表示を行っている．
 
--switch_ready
+ - switch_ready
 ```ruby
 def switch_ready(datapath_id)
   @fdbs[datapath_id] = FDB.new
@@ -28,7 +28,7 @@ end
 ```
 コントローラにスイッチが接続された際の処理．コントローラではスイッチごとにFDBを管理するため，スイッチとのデータパスidをキーとして，ハッシュにFDBを追加している．
 
--packet_in
+ - packet_in
 ```ruby
 def packet_in(datapath_id, packet_in)
   return if packet_in.destination_mac.reserved?
@@ -47,7 +47,7 @@ end
 fdbsのエージングを管理？
 
 
--flow_mod_and_packet_out
+ - flow_mod_and_packet_out
 ```ruby
 def flow_mod_and_packet_out(packet_in)
   port_no = @fdbs.fetch(packet_in.dpid).lookup(packet_in.destination_mac)
@@ -60,6 +60,7 @@ packet_inのあったスイッチに対応するFDBを参照し，宛先MACア�
 
  - flow_mod
  - packet_out
+
 複数スイッチ対応による変更はなし
 
 ##動作の解説
