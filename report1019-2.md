@@ -88,7 +88,8 @@ cookie=0x0, duration=101.086s, table=1, n_packets=0, n_bytes=0, priority=3,dl_ds
 cookie=0x0, duration=3.826s, table=1, n_packets=0, n_bytes=0, idle_timeout=180, priority=2,in_port=2,dl_src=f7:7e:c9:dc:a0:82,dl_dst=3a:ec:21:0e:0d:8b actions=output:1
 cookie=0x0, duration=101.086s, table=1, n_packets=2, n_bytes=84, priority=1 actions=CONTROLLER:65535
 ```
-ここで，転送テーブルが以下の内容に更新される
+ここで，転送テーブルが以下の内容に更新される.
+
 table_id = 1 (転送テーブル)
 
 |優先度|処理内容                                      |
